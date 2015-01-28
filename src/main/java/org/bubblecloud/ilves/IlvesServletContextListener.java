@@ -83,8 +83,9 @@ public class IlvesServletContextListener implements ServletContextListener {
         Ilves.initializeModule(ContentModule.class);
 
         Ilves.addRootPage(0, "custom", DefaultValoView.class);
-        Ilves.setPageComponent("custom", Slot.CONTENT, WelcomeComponent.class);
-        Ilves.setPageComponent("custom", Slot.FOOTER, CommentingComponent.class);
+        Ilves.setPageComponent("custom", Slot.CONTENT, SongView.class);
+        //Ilves.setPageComponent("custom", Slot.FOOTER, SongView.class);
+        //Ilves.setPageComponent("custom", Slot.FOOTER, CommentingComponent.class);
         Ilves.setDefaultPage("custom");
 
         LOGGER.info("Ilves servlet context initialized in " + (System.currentTimeMillis() - startTimeMillis ) + " ms.");
