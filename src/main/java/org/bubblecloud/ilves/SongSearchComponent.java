@@ -1,7 +1,7 @@
 package org.bubblecloud.ilves;
 
 import org.apache.log4j.Logger;
-import org.bubblecloud.ilves.data.SongSQLContainer;
+import org.bubblecloud.ilves.database.SongSQLContainer;
 
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
